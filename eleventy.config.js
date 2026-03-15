@@ -11,4 +11,13 @@ export default function (eleventyConfig) {
       timeZone: 'UTC', // Fixes the "day before" timezone issue
     });
   });
+
+  // Add the pathPrefix so the links work on GitHub Pages
+  return {
+    pathPrefix: '/blog/',
+    dir: {
+      input: '.',
+      output: '_site',
+    },
+  };
 }
