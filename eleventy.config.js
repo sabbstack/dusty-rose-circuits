@@ -1,4 +1,7 @@
 export default function (eleventyConfig) {
+  // Copy the css folder to the output
+  eleventyConfig.addPassthroughCopy('css');
+
   // Add a filter for nice date formatting
   eleventyConfig.addFilter('postDate', (dateObj) => {
     // Ensure we're working with a Date object
@@ -8,7 +11,7 @@ export default function (eleventyConfig) {
       year: 'numeric',
       month: 'long',
       day: 'numeric',
-      timeZone: 'UTC', // Fixes the "day before" timezone issue
+      timeZone: 'UTC',
     });
   });
 

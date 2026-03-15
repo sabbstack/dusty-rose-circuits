@@ -1,3 +1,3 @@
-# Sabby's Blog
+# my blog
 
-This is my blog. I just share my thoughts and experiences here!
+This is my personal blog.

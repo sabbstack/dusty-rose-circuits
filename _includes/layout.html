@@ -3,11 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=<h1>, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
   <title>Document</title>
 </head>
 <body>
+  <nav>
+    <a href="{{ '/' | url }}">Home</a>
+  </nav>
   <h1>{{ title | default: "Sabby's Blog" }}</h1>
   <main>
-    {{ content }}
+    <div class="content">
+      {{ content }}
+    </div>
   </main>
 </html>
