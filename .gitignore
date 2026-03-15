@@ -1,0 +1,18 @@
+node_modules
+_site
+
+# --- OS Specific Files ---
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# --- IDE Specific Files ---
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
