@@ -1,0 +1,61 @@
+body {
+  font-family: sans-serif;
+  max-width: 600px;
+  margin: 40px auto;
+  line-height: 1.6;
+  padding: 0 20px;
+  background-color: #282828;
+}
+
+h1 {
+  /* color: #333; */
+  color: #cebc7a;
+}
+
+h2 {
+  margin-left: 15px;
+  color: #f17aa0;
+}
+
+div {
+  border: 1px solid #4e4e4e;
+  border-radius: 25px;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+a {
+  color: #cebc7a;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: azure;
+  transition: 0.5s;
+}
+
+p {
+  margin: 15px 20px 30px 20px;
+  color: #dcdcdc;
+}
+
+/* Remove bullet points */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 20px;
+  list-style: none; /* Extra safety to ensure bullets are gone */
+}

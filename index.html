@@ -9,12 +9,10 @@ layout: layout.html
 <p>{{ post.content }}</p>
 {% endfor %} -->
 
+{% for post in collections.post %}
 
-  <ul>
-    {% for post in collections.post %}
-    <li>
-      <a href="{{ post.url | url }}">{{ post.date | postDate }}</a>
-    </li>
-    {% endfor %}
-  </ul>
+<div class="post-container">
+  <h3><a href="{{ post.url | url }}">{{ post.date | postDate }}</a></h3>
+</div>
 
+{% endfor %}

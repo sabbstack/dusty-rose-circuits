@@ -1,44 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+:root {
+  --bg-color: #1e1b21; /* A soft, deep dark purple-charcoal */
+  --text-main: #e0d8dc; /* Off-white, easier on eyes than pure gray */
+  --pink-accent: #f48fb1; /* A softer, cute pink */
+  --gold-accent: #ffcc80; /* A warm, soft gold that pops on dark */
+  --border-color: #3d353d; /* Muted border */
+  --shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* The "cute" floating effect */
+}
+
 body {
-  font-family: sans-serif;
-  max-width: 600px;
+  font-family: 'Quicksand', sans-serif;
+  max-width: 650px;
   margin: 40px auto;
-  line-height: 1.6;
+  line-height: 1.7;
   padding: 0 20px;
+  background-color: var(--bg-color);
+  color: var(--text-main);
 }
 
 h1 {
-  color: #333;
+  color: var(--pink-accent);
+  border-bottom: 2px solid var(--pink-accent);
+  display: inline-block;
+  padding-right: 20px;
 }
 
 h2 {
-  margin-left: 15px;
-  color: #f17aa0;
+  color: var(--gold-accent);
+  font-size: 1.4rem;
 }
 
-div {
-  border: 1px solid #ddd;
-  border-radius: 25px;
+h3 {
+  margin: 10px 20px;
 }
 
-ul {
-  list-style-type: square;
-  padding-left: 20px;
+h1,
+h2 {
+  font-weight: 700;
+  margin-top: 0;
 }
 
-li {
-  margin-bottom: 10px;
-  list-style: none;
+/* Use a container class instead of targeting all 'div' elements */
+.post-container {
+  background-color: #2a252d; /* Slightly lighter than body for depth */
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-shadow: var(--shadow); /* This adds the soft depth */
+  transition: transform 0.3s ease;
 }
 
-a {
-  color: #bdaa67;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
+.post-container:hover {
+  transform: translateY(-5px); /* Slightly lifts the card on hover */
+  border: 1px solid var(--pink-accent); /* Pink border glow on hover */
 }
 
 p {
-  margin: 15px 20px 30px 20px;
+  margin: 15px 20px;
+}
+
+a {
+  color: var(--gold-accent);
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: var(--pink-accent);
+  text-decoration: underline;
 }

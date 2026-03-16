@@ -1,6 +1,6 @@
 ---
 tags: post
-date: 2026-01-24
+date: 2026-01-24T01:30:00Z
 ---
 
 <h2> {{ date | postDate }} </h2>
