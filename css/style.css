@@ -72,3 +72,21 @@ a:hover {
   color: var(--pink-accent);
   text-decoration: underline;
 }
+
+.cute-divider {
+  border: none;
+  height: 4px;
+  background-color: var(--pink-accent);
+  width: 50px; /* Making it short and centered is a very "cute" look */
+  border-radius: 10px;
+  margin: 50px auto; /* Centers it and adds vertical breathing room */
+  opacity: 0.6;
+}
+
+/* footer {
+  margin-top: 60px;
+  padding-top: 20px;
+  border-top: 2px dashed var(--border-color);
+  text-align: center;
+  font-size: 0.9rem;
+} */
