@@ -20,7 +20,7 @@ export default function (eleventyConfig) {
 
   // Add the pathPrefix so the links work on GitHub Pages
   return {
-    pathPrefix: '/blog/',
+    pathPrefix: '/dusty-rose-circuits/',
     dir: {
       input: '.',
       output: '_site',
